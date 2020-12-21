@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="1201.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="medica_clinica.FXMLver_consultasController">
+   <children>
+      <Label layoutX="451.0" layoutY="25.0" text="VER CONSULTAS" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="buscar_crm" layoutX="26.0" layoutY="76.0" promptText="BUSCAR  POR CRM" />
+      <TextField fx:id="buscar_cpf" layoutX="26.0" layoutY="144.0" promptText="BUSCAR POR CPF" />
+      <TextField fx:id="buscar_data" layoutX="26.0" layoutY="212.0" promptText="POR DATA: XX/XX/XXX" />
+      <Button layoutX="221.0" layoutY="75.0" mnemonicParsing="false" onAction="#buscar_crm" text="BUSCAR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="221.0" layoutY="143.0" mnemonicParsing="false" onAction="#buscar_cpf" text="BUSCAR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="221.0" layoutY="211.0" mnemonicParsing="false" onAction="#buscar_data" text="BUSCAR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="74.0" layoutY="346.0" mnemonicParsing="false" onAction="#sair" style="-fx-background-color: #000;" text="SAIR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tabela_consulta" layoutX="351.0" layoutY="76.0" prefHeight="354.0" prefWidth="839.0">
+        <columns>
+          <TableColumn fx:id="data" prefWidth="75.0" text="DATA" />
+          <TableColumn fx:id="hi" prefWidth="75.0" text="HORA-INICIAL" />
+            <TableColumn fx:id="hf" prefWidth="75.0" text="HORA-FINAL" />
+            <TableColumn fx:id="id" prefWidth="75.0" text="ID PACIENTE" />
+            <TableColumn fx:id="id_c" prefWidth="75.0" text="ID CONSULTA" />
+            <TableColumn fx:id="id_m" prefWidth="75.0" text="ID MÉDICO" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="44.0" layoutY="293.0" mnemonicParsing="false" onAction="#ver_m" text="VER MÉDICOS" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

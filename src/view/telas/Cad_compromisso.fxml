@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medica_clinica.Cad_compromissoController">
+   <children>
+      <Label layoutX="200.0" layoutY="14.0" prefHeight="70.0" prefWidth="200.0" text="COMPROMISSOS" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="296.0" text="ID do Médico:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_med" layoutX="195.0" layoutY="290.0" prefHeight="31.0" prefWidth="202.0" promptText="ID DO MÉDICO" />
+      <Button layoutX="413.0" layoutY="290.0" mnemonicParsing="false" onAction="#ver_medicos" prefHeight="30.0" prefWidth="124.0" text="VER MÉDICOS" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="63.0" layoutY="342.0" text="Data:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="399.0" text="Hora de início:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="456.0" text="Hora de termino:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_data" layoutX="195.0" layoutY="336.0" prefHeight="31.0" prefWidth="342.0" promptText="DD/MM/AAAA" />
+      <TextField fx:id="tf_hi" layoutX="195.0" layoutY="393.0" prefHeight="31.0" prefWidth="342.0" promptText="XX:XX" />
+      <TextField fx:id="tf_ht" layoutX="195.0" layoutY="450.0" prefHeight="31.0" prefWidth="342.0" promptText="XX:XX" />
+      <TextField fx:id="tf_descricao" layoutX="195.0" layoutY="509.0" prefHeight="26.0" prefWidth="342.0" promptText="Digite uma pequena descrição" />
+      <Label layoutX="66.0" layoutY="512.0" text="Descrição">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="252.0" layoutY="554.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="45.0" prefWidth="96.0" text="MARCAR" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="259.0" layoutY="628.0" mnemonicParsing="false" onAction="#sair" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #000;" text="SAIR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="62.0" layoutY="227.0" prefHeight="45.0" prefWidth="114.0" text="ID:" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_id" layoutX="195.0" layoutY="237.0" prefHeight="26.0" prefWidth="342.0" />
+      <ImageView fitHeight="101.0" fitWidth="108.0" layoutX="246.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/notebook.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
